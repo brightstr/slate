@@ -1,29 +1,45 @@
 {
   "name": "slate",
   "description": "A completely customizable framework for building rich text editors.",
-  "version": "0.58.4",
+  "version": "0.47.9",
   "license": "MIT",
   "repository": "git@github.com:brightstr/slate.git",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "umd": "dist/slate.js",
-  "umdMin": "dist/slate.min.js",
-  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "umd": "dist/index.js",
+  "umdMin": "dist/index.min.js",
   "files": [
-    "dist/"
+    "dist/",
+    "lib/"
   ],
   "dependencies": {
-    "@types/esrever": "^0.2.0",
+    "debug": "^3.1.0",
+    "direction": "^0.1.5",
     "esrever": "^0.2.0",
-    "immer": "^5.0.0",
-    "is-plain-object": "^3.0.0",
-    "tiny-warning": "^1.0.3"
+    "is-plain-object": "^2.0.4",
+    "lodash": "^4.17.4",
+    "tiny-invariant": "^1.0.1",
+    "tiny-warning": "^0.0.3",
+    "type-of": "^2.0.1"
+  },
+  "peerDependencies": {
+    "immutable": ">=3.8.1 || >4.0.0-rc"
+  },
+  "devDependencies": {
+    "slate-dev-test-utils": "^0.0.1",
+    "slate-hyperscript": "^0.13.9"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist ./lib ./node_modules"
+  },
+  "umdGlobals": {
+    "immutable": "Immutable"
   },
   "keywords": [
     "canvas",
     "contenteditable",
-    "custom",
+    "doc",
+    "docs",
     "document",
     "edit",
     "editor",
@@ -34,12 +50,11 @@
     "paper",
     "react",
     "rich",
-    "richtext",
+    "rich-text",
     "richtext",
     "slate",
     "text",
     "wysiwyg",
     "wysiwym"
-  ],
-  "gitHead": "958189bc4ae4502dc7fe22219c77fea9820124f5"
+  ]
 }
