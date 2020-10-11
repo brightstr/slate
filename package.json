@@ -4,8 +4,8 @@
   "version": "0.47.9",
   "license": "MIT",
   "repository": "git@github.com:brightstr/slate.git",
-  "main": "lib/index.js",
-  "module": "lib/index.es.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "umd": "dist/index.js",
   "umdMin": "dist/index.min.js",
   "files": [
